@@ -15,7 +15,7 @@ class CatsController < ApplicationController
     if @cat.save
       redirect_to cat_url(@cat)
     else
-      redirect_to new_cat_url(:name => @cat.name)
+      redirect_to new_cat_url( :name => @cat.name)
     end
   end
 
