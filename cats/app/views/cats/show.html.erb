@@ -1,0 +1,9 @@
+<h1><%= @cat.name.upcase %></h1>
+
+  <ul>
+    <% @cat.attributes.each do |key, value|%>
+      <li>
+        <%= "#{key}: #{value || "N/A"}"%>
+      </li>
+    <% end %>
+  </ul>

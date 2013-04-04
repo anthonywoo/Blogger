@@ -1,0 +1,10 @@
+<h1>99 Cats</h1>
+<ul id="articles">
+  <% @cats.each do |cat| %>
+  <li>
+    <a href="/cats/<%= cat.id %>" ><%= cat.name %></a>
+  </li>
+  <% end %>
+</ul>
+
+<%= button_to "Create Cat", new_cat_url, method: :get%>
